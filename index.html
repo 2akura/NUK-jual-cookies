@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styling.css">
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@500&family=Quicksand:wght@500&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <form 
+  method="POST" 
+  action=">
+    <div class="boxxy">
+    <p>Custom your order!</p>
+<div class="form-category">
+    Top it up with our delicious topping options :
+  </div>
+      
+    <div class=extras-container>
+   <article class="masola_crunch">
+  <input 
+    type="checkbox" 
+    id="masola_crunch"
+    class="feature-checkbox"
+    name="masola_crunch" 
+    value='{"name":"masola crunch", "price":25.00}' 
+  />
+  <div>
+    <span>
+     masola crunch<br/>
+      RM25.00
+    </span>
+  </div>
+</article>
+<div class="form-container">
+    <label> <input type="text" placeholder="Amount" id="masola_crunch_qty" name="masola_crunch_qty" required></label>
+</div>
+  
+<article class="velvet_royal">
+  <input 
+    type="checkbox" 
+    id="velvet_royal"
+    class="feature-checkbox"
+    name="velvet_royal"
+    value='{"name":"velvet_royal", "price":25.00}' 
+  />
+  <div>
+    <span>
+      <br/>
+      velvet royal <br/>
+      RM25.00
+    </span>
+  </div>
+</article>
+<div class="form-container">
+    <label> <input type="text" placeholder="Amount" id="velvet_royal_qty" name="velvet_royal_qty" required></label>
+</div>
+      
+<article class="classic_cornflake">
+  <input 
+    type="checkbox" 
+    id="classic_cornflake"
+    class="feature-checkbox"
+    name="classic_cornflake" 
+    value='{"name":"classic cornflake", "price":25.00}' 
+  />
+  <div>
+    <span>
+     classic cornflake <br/>
+     RM25.00
+    </span>
+  </div>
+</article>
+<div class="form-container">
+    <label> <input type="text" placeholder="Amount" id="classic_cornflake_qty" name="classic_cornflake_qty" required></label>
+</div>
+      
+<article class="nutella_button">
+  <input 
+    type="checkbox" 
+    id="nutella_button"
+    class="feature-checkbox"
+    name="nutella_button" 
+    value='{"name":"nutella_button", "price":25.00}' 
+  />
+  <div>
+    <span>
+     nutella button <br/>
+       RM25.00
+    </span>
+  </div>
+</article>
+<div class="form-container">
+    <label> <input type="text" placeholder="Amount" id="nutella_button_qty" name="nutella_button_qty" required></label>
+</div>
+
+<article class="dahlia_luxe">
+  <input 
+    type="checkbox" 
+    id="dahlia_luxe"
+    class="feature-checkbox"
+    name="dahlia_luxe" 
+    value='{"name":"dahlia_luxe", "price":25.00}' 
+  />
+  <div>
+    <span>
+     dahlia luxe <br/>
+       RM25.00
+    </span>
+  </div>
+</article>
+<div class="form-container">
+    <label> <input type="text" placeholder="Amount" id="dahlia_luxe_qty" name="dahlia_luxe_qty" required></label>
+</div>
+
+<article class="combo_mix">
+  <input 
+    type="checkbox" 
+    id="combo_mix"
+    class="feature-checkbox"
+    name="combo_mix" 
+    value='{"name":"combo_mix", "price":100.00}' 
+  />
+  <div>
+    <span>
+     combo mix <br/>
+     of 5 flavours <br/>
+       RM100.00
+    </span>
+  </div>
+</article>
+<div class="form-container">
+    <label> <input type="text" placeholder="Amount" id="combo_mix_qty" name="combo_mix_qty" required></label>
+</div>
+      
+    </div>
+      <div class="last-notecontainer">
+      <div class="last-note">
+      click the 'Order' button below to further proceed your order 
+      </div>
+      </div>
+    <button type="submit"class="submit">Order</button>
+</div>
+    </form>
+
+
+    <!-- Summary Modal -->
+<div id="modal-summary" class="summary-modal" style="display: none;">
+  <div class="modal-content">
+    <span class="close-btn">&times;</span>
+    <h3>Your Order</h3>
+    <ul id="modal-summary-list"></ul>
+    <div class="modal-total"><strong>Total: RM<span id="modal-total-price">0.00</span></strong></div>
+    <div class="little-note">
+      Note: click the 'Confirm' button when satisfied, or 'x' to edit your order
+    </div>
+    <div>
+      <label>
+        Upload PDF receipt: 
+        <input type="file" id="receipt" accept="application/pdf">
+      </label>
+    </div>
+    <div id="qr-container" style="margin-top: 10px;"></div>
+    <button id="confirm-submit">Confirm</button>
+  </div>
+</div>
+
+    <script src="src/script.js" defer></script>
+  </body>
+</html>

@@ -1,0 +1,164 @@
+body{
+  background-color: #e8e8e8;
+}
+.boxxy {
+  position: relative;
+  height: auto;
+  width: 450px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 4px;
+  color: #333;
+  box-shadow: 0px 0px 60px 5px rgba(0, 0, 0, 0.4);
+  margin: 100px auto;
+  
+  justify-content: center;
+  
+}
+.boxxy:after {
+  position: absolute;
+  content: "";
+  right: -10px;
+  bottom: 18px;
+  width: 0;
+  height: 0;
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
+  border-bottom: 0px solid #1a044e;
+}
+
+.boxxy p {
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 4px;
+  line-height: 28px;
+  font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.boxxy input {
+  
+  transition: all .25s ease; 
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px; /* Optional: spacing between inputs */
+}
+.form-container input[type="text"] {
+width: 122px;       /* or try 100% for full width if inside a container */
+height: 20px;       /* increase box height */
+padding: 8px 12px;  /* adds space inside the box */
+font-size: 13px;    /* enlarges the text inside */
+border: 1px solid #fff;
+border-bottom: 1px solid #ccc 
+
+}
+.boxxy input:focus {
+  outline: none;
+  border-bottom: 1px solid #0d095e;
+  font-family:'Quicksand', sans-serif;
+}
+
+.boxxy .submit {
+  position: absolute;
+  border-radius: 30px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  background-color: #0f0092;
+  color: #FFF;
+  padding: 12px 25px;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  right: -10px;
+  bottom: -20px;
+  cursor: pointer;
+  transition: all .25s ease;
+  box-shadow: -5px 6px 20px 0px rgba(26, 26, 26, 0.4);
+}
+.boxxy .submit:hover {
+  background-color: #07013d;
+  box-shadow: -5px 6px 20px 0px rgba(88, 88, 88, 0.569);
+}
+
+article {
+  position: relative;
+  width: 140px;
+  height: 100px;
+  margin: 5px;
+  float: left;
+  border: 2px solid #0f0092;
+  box-sizing: border-box;
+}
+
+article div {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  line-height: 25px;
+  transition: .5s ease;
+}
+
+article input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  height: 100px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+input[type=checkbox]:checked ~ div {
+  background-color: #0f0092;
+  color: white;
+}
+
+.upgrade-btn {
+  display: block;
+  margin: 30px auto;
+  width: 200px;
+  padding: 10px 20px;
+  border: 2px solid #0f0092;
+  border-radius: 50px;
+  color: #f5f5f5;
+  font-size: 18px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: .3s ease;
+}
+
+.upgrade-btn:hover {
+  background-color: #0f0092;
+}
+
+.upgrade-btn {
+  width: 100%;
+  font-size: 16px;
+  padding-bottom: 15px;
+}
+
+.boxxy .submit {
+ 
+  font-size: 10px;
+}
+
+.extras-container {
+  display: flex;           /* enables flexbox */
+  gap: 1rem;               /* space between items */
+  flex-wrap: wrap;         /* wraps if needed */
+  justify-content: center; /* align horizontally */
+}
+
+
+.extras-container article {
+ color: black;
+ text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
